@@ -23,7 +23,6 @@ ID Vehículo</b></font></td>
 <td bgColor="cyan" width="290" height="19"><font color="red"><b>Núm. bastidor </b></font></td>
 <td bgColor="cyan" width="290" height="19"><font color="red"><b>Núm. asientos </b></font></td>
 <td bgColor="cyan" width="290" height="19"><font color="red"><b>Precio </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Imagen </b></font></td>
 <td bgColor="cyan" width="290" height="19"><font color="red"><b>Modificar </b></font></td>
 <td bgColor="cyan" width="290" height="19"><font color="red"><b>Vender </b></font></td>
  </thead>
@@ -54,8 +53,6 @@ if (i==(i/2)*2){
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(6)%></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(7)%></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(8)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(9)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(10)%></td>
 <td bgColor="lightgreen" vAlign="top" width="220" height="19" >
     <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19">
@@ -73,12 +70,10 @@ if (i==(i/2)*2){
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(6)%></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(7)%></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(8)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(9)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(10)%></td>
 <td bgColor="lightgreen" vAlign="top" width="220" height="19" >
-    <a href="Modificar.jsp?id=<%=rst.getInt("id")%>"> Modificar Vehículo </a></td>
+    <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
 <td bgColor="lightgreen" vAlign="top" width="230" height="19">
-    <a href="Vender.jsp?id=<%=rst.getInt("id")%>"> Vender Vehículo </a></td>
+    <a href="Vender.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Vender Vehículo </a></td>
 </tr>
 <%	}
 
