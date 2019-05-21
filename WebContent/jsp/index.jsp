@@ -14,17 +14,17 @@
     <br>
     <table>
     <thead>
-    <td bgColor="cyan" width="150" align="center" height="19"><font color="red"><b>
-ID Vehículo</b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Serie</b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Pintado</b></font></td>
-<td bgColor="cyan" width="230" height="19"><font color="red"><b>Cod. color</b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Matrícula </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Núm. bastidor </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Núm. asientos </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Precio </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Modificar </b></font></td>
-<td bgColor="cyan" width="290" height="19"><font color="red"><b>Vender </b></font></td>
+    <td>ID Vehículo</td>
+<td>Serie</td>
+<td>Pintado</td>
+<td>Cod. color</td>
+<td>Matrícula</td>
+<td>Núm. bastidor</td>
+<td>Núm. asientos</td>
+<td>Precio</td>
+<td>Imagen</td>
+<td>Modificar</td>
+<td>Vender</td>
  </thead>
  <tbody>
 <%
@@ -35,7 +35,7 @@ ResultSet rst=null;
 Statement stmt=null;
 try{
   
-String url="jdbc:mysql://10.18.124.43:3306/proyecto?user=Andoni&password=Superusuario";
+String url="jdbc:mysql://10.18.124.43:3306/proyecto?user=andoni&password=Superusuario";
 int i=1;
 con=DriverManager.getConnection(url);
 stmt=con.createStatement();
@@ -45,34 +45,36 @@ while(rst.next()){
 if (i==(i/2)*2){
 %>
 <tr>
-<td bgColor="lightgreen" vAlign="top" width="80"  height="19"><%=i%></td>
-<td bgColor="lightgreen" vAlign="top" width="110" height="19"><%=rst.getString(2)%></td>
-<td bgColor="lightgreen" vAlign="top" width="224" height="19"><%=rst.getString(3)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(4)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(5)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(6)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(7)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(8)%></td>
-<td bgColor="lightgreen" vAlign="top" width="220" height="19" >
+<td><%=i%></td>
+<td><%=rst.getString(2)%></td>
+<td><%=rst.getString(3)%></td>
+<td bgColor="<%=rst.getString(4)%>"></td>
+<td><%=rst.getString(5)%></td>
+<td><%=rst.getString(6)%></td>
+<td><%=rst.getString(7)%></td>
+<td><%=rst.getString(8)%></td>
+<td><img src='<%=rst.getString(9)%>'></td>
+<td>
     <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19">
+<td>
     <a href="Vender.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Vender Vehículo </a></td>
 </tr>
 <%
 }else{
 %>
 <tr>
-<td bgColor="lightgreen" vAlign="top" width="80"  height="19"><%=i%></td>
-<td bgColor="lightgreen" vAlign="top" width="110" height="19"><%=rst.getString(2)%></td>
-<td bgColor="lightgreen" vAlign="top" width="224" height="19"><%=rst.getString(3)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(4)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(5)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(6)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(7)%></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19"><%=rst.getString(8)%></td>
-<td bgColor="lightgreen" vAlign="top" width="220" height="19" >
+<td><%=i%></td>
+<td><%=rst.getString(2)%></td>
+<td><%=rst.getString(3)%></td>
+<td bgColor="<%=rst.getString(4)%>"></td>
+<td><%=rst.getString(5)%></td>
+<td><%=rst.getString(6)%></td>
+<td><%=rst.getString(7)%></td>
+<td><%=rst.getString(8)%></td>
+<td><img src='<%=rst.getString(9)%>'></td>
+<td>
     <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
-<td bgColor="lightgreen" vAlign="top" width="230" height="19">
+<td>
     <a href="Vender.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Vender Vehículo </a></td>
 </tr>
 <%	}
