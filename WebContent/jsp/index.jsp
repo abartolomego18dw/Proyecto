@@ -17,12 +17,12 @@
     <td>ID Vehículo</td>
 <td>Serie</td>
 <td>Pintado</td>
-<td>Cod. color</td>
+<td>Color</td>
 <td>Matrícula</td>
 <td>Núm. bastidor</td>
 <td>Núm. asientos</td>
 <td>Precio</td>
-<td>Imagen</td>
+
 <td>Modificar</td>
 <td>Vender</td>
  </thead>
@@ -53,7 +53,7 @@ if (i==(i/2)*2){
 <td><%=rst.getString(6)%></td>
 <td><%=rst.getString(7)%></td>
 <td><%=rst.getString(8)%></td>
-<td><img src='<%=rst.getString(9)%>'></td>
+
 <td>
     <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
 <td>
@@ -71,7 +71,7 @@ if (i==(i/2)*2){
 <td><%=rst.getString(6)%></td>
 <td><%=rst.getString(7)%></td>
 <td><%=rst.getString(8)%></td>
-<td><img src='<%=rst.getString(9)%>'></td>
+
 <td>
     <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
 <td>
