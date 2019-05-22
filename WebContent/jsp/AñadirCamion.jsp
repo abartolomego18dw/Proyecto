@@ -17,7 +17,7 @@
 		.elemento{
 			margin: 2px 0px 1px 10px;
 		}
-		h3{
+		form h3{
 			color: #AAB7B8;
 			font-size:25px;
 		}
@@ -26,7 +26,7 @@
 			width: 500px;
 			text-align: center;
 			height: 520px;
-			margin-top: 50px;
+			margin-top: 150px;
 			border-radius: 5px;
 
 		}
@@ -80,7 +80,7 @@
 </head>
 <body>
 	<center><div id="form" >
-
+	<form method="POST" action="Guardar2.jsp">
 	
 	
 
@@ -94,27 +94,20 @@
 
 
 
-		<h3>DATOS GENERALES</h3>
+		<h3>DATOS ESPEÍFICOS DE CAMIÓN</h3>
 			
-			<input value="Color" type="" name="cod_color" class="elemento" title="Color">
-			<input value="Matricula" type="text" name="matricula" class="elemento" title="Matricula"><br>
-			<input value="Numero bastidor" type="text" name="Num_bastidor" class="elemento" title="Numero bastidor">
-			<input value="Se pinta" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
-			<input value="Numero de asientos" type="number" name="num_asientos" class="elemento" title="Número de asientos">
-			<input value="id_serie" type="number" name="id_serie" class="elemento" title="id_serie"><br>
-			<input value="precio" type="number" name="precio" class="elemento" title="precio"><br>
+
+			<input value="carga" type="number" name="carga" class="elemento" title="carga">
+
+
+			<input value="tipo_mercancia" type="number" name="tipo_mercancia" class="elemento" title="Tippo Mercancía"><br>
+
 
 			
 		
 			<br>
+			<button id="linkactualizar"><a href="AñadirCoche.jsp">Añadir</a></button>
 			
-			<form method="POST" action="AñadirCoche.jsp">
-			<button id="linkactualizar"><a href="AñadirCoche.jsp">Añadir Coche</a></button>
-			</form>
-			
-			<form method="POST" action="Guardar.jsp">
-			<button id="linkactualizar"><a href="AñadirCamion.jsp">Añadir Camión</a></button>
-			</form>
 			
 	
 			
@@ -122,7 +115,7 @@
 			
 			
 			
-
+	</form>
 	
 
 	

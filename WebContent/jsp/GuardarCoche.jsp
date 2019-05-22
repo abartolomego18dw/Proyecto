@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+
+		<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" import="java.sql.*,java.util.*,java.text.*"%>
 
 
@@ -19,12 +20,16 @@ String num_bastidor=request.getParameter("num_bastidor");
 String se_pinta=request.getParameter("se_pinta");
 String num_asientos=request.getParameter("num_asientos");
 String precio=request.getParameter("precio");
+String capacidad_maletero=request.getParameter("capacidad_maletero");
+String num_puertas=request.getParameter("num_puertas");
 
-
-int val = st.executeUpdate("INSERT into vehiculo  "
-        + "VALUES(id_vehiculo,'"+id_serie+"','"+se_pinta+"','"+cod_color+"','"+ matricula +"','"+num_bastidor+"','"+num_asientos+"','"+precio+"')");
+int val2 = st.executeUpdate("INSERT into coche "
+		+ "VALUES(id_vehiculo, '"+capacidad_maletero+"','"+num_puertas+"')");
 
 con.close();
+out.println("<p> El coche se ha añadido correctamente. </p>");
+out.println("<br>");
+out.println("<a href='index.jsp'> Volver a la página principal </a>");
 }
 catch (SQLException ex){
 System.out.println("SQL statement is not executed!");
