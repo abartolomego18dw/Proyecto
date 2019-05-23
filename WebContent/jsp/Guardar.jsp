@@ -4,7 +4,7 @@
 
 <%
 Connection con = null;
-String url = "jdbc:mysql://10.18.124.43:3306/";;
+String url = "jdbc:mysql://10.18.124.44:3306/";;
 String db = "proyecto";
 String driver = "com.mysql.jdbc.Driver";
 try{
