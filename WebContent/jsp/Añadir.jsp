@@ -39,7 +39,7 @@
 			background-color: #28B463  ;
 			border-width: 1px;
 			height: 40px;
-		}a
+		}
 		#linkactualizar{
 			margin-top: 10px;
 			margin-left: : 0px;
