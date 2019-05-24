@@ -79,7 +79,7 @@
 	</style>
 </head>
 <body>
-<form method="POST" action="AñadirCoche.jsp">
+<form method="POST" action="Guardar.jsp">
 	<center><div id="form" >
 
 	
@@ -104,34 +104,24 @@
 			<input value="Se pinta" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
 			<input value="Numero de asientos" type="number" name="num_asientos" class="elemento" title="Número de asientos">
 			<input value="precio" type="number" name="precio" class="elemento" title="precio"><br>
+			
+		<h3>DATOS ESPECÍFICOS DE COCHE</h3>
+		
+			<input value="Capacidad maletero" type="number" name="capacidad_maletero" class="elemento" title="Capacidad del maletero">
+			<input value="Numero de puertas" type="number" name="num_puertas" class="elemento" title="Numero de puertas">
 
 			
 		
 			<br>
 			
 			
-			<input id="linkactualizar" type="submit" value="Añadir Vehiculo" name="AñadirVe">
+			<input id="linkactualizar" type="submit" value="Añadir Coche" name="AñadirCo">
 			</form>
 			
-		
-	
-			
-			
-			
-			
-			
 
-	
-
-	
-	
 	
 	</div>
 </center>
-
-
-
-
 
 
 </body>
