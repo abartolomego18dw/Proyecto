@@ -2,9 +2,6 @@
     <wb-module deploy-name="ProyectoAXA">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <dependent-module archiveName="mysql-connector-java-5.1.47-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/ik013043z1/Desktop/Programación Web/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="ProyectoAXA"/>
         <property name="java-output-path" value="/ProyectoAXA/build/classes"/>
     </wb-module>
