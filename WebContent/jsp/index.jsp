@@ -9,7 +9,12 @@
 
 <h2>Vehículos Disponibles</h2>
 <div align="left" width="200%">
-<% out.println("<a class='space' href='Añadir.jsp'> Añadir Vehículo </a>");  %>  
+<% out.println("<a class='space' href='Añadir.jsp'> Añadir Coche </a>");%>  
+<% out.println("<a class='space' href='AñadirCamion.jsp'> Añadir Camión </a>");%>
+<% out.println("<a class='space' href='Modificar.jsp'> Modificar Coche </a>");%> 
+<% out.println("<a class='space' href='ModificarCamion.jsp'> Modificar Camión </a>");%> 
+<% out.println("<a class='space' href='Vender.jsp'> Vender Vehículo </a>");%>
+<% out.println("<a class='space' href='Historial.jsp'> Ver Historial </a>");%>
     </div>
     <br>
     <table>
@@ -22,9 +27,6 @@
 <td>Núm. bastidor</td>
 <td>Núm. asientos</td>
 <td>Precio</td>
-
-<td>Modificar</td>
-<td>Vender</td>
  </thead>
  <tbody>
 <%
@@ -54,10 +56,6 @@ if (i==(i/2)*2){
 <td><%=rst.getString(7)%></td>
 <td><%=rst.getString(8)%></td>
 
-<td>
-    <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
-<td>
-    <a href="Vender.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Vender Vehículo </a></td>
 </tr>
 <%
 }else{
@@ -72,10 +70,6 @@ if (i==(i/2)*2){
 <td><%=rst.getString(7)%></td>
 <td><%=rst.getString(8)%></td>
 
-<td>
-    <a href="Modificar.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Modificar Vehículo </a></td>
-<td>
-    <a href="Vender.jsp?id=<%=rst.getInt("id_vehiculo")%>"> Vender Vehículo </a></td>
 </tr>
 <%	}
 
