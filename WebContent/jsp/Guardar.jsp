@@ -51,7 +51,17 @@
 <link rel="shortcut icon" type="image/png" href="../../img/diseño/descarga.png">
 <style type="text/css">
 
-	
+		body{
+		background-image: url("../img/diseño/compra.jpg") ;
+			background-repeat: no-repeat;
+			background-size: 100vw 100vh;
+
+		}
+		div{
+		margin-top:10vh;
+		background-color: #28B463;
+		font-size: 25px;
+		}
 		#form{
 			background-color: #2E4053;
 			width: 500px;
@@ -59,17 +69,17 @@
 			height: 520px;
 			margin-top: 50px;
 			border-radius: 5px;
+			
 
 		}
 
 		#linkactualizar{
 			margin-top: 10px;
 			margin-left: : 0px;
-			width: 36%;
+			width: 40%;
 			font-size: 20px;
-			border-style: 0px;
 			background-color: #28B463  ;
-			border-width: 1px;
+			border:1px solid black;
 			height: 40px;
 			color: white;
 		}
@@ -82,15 +92,22 @@
 		height: 25px;
 		text-align: center;
 		}
+		div{
+		border: 1px solid black;
+		width:40vw;
+		heigth:50vh;
+		text-align: center;
+		}
 		
 
 
 	</style>
 </head>
 <body>
+<center><div>
 	<p>Ha comprado el coche con los siguientes datos: </p>
 	<p>ID Serie: <% out.print(request.getParameter("id_serie")); %> </p>
-	<p>Color: <% out.print(request.getParameter("cod_color")); %>"</p>
+	<p>Color: <% out.print(request.getParameter("cod_color")); %></p>
 	<p>Matrícula: <% out.print(request.getParameter("matricula")); %></p>
 	<p>Número de bastidor: <% out.print(request.getParameter("num_bastidor"));%></p>
 	<p>¿Se va a pintar?: <% out.print(request.getParameter("se_pinta")); %></p>
@@ -98,10 +115,10 @@
 	<p>Precio: <% out.print(request.getParameter("precio")); %> euros</p>
 	<p>Capacidad de maletero: <% out.print(request.getParameter("capacidad_maletero")); %> Litros</p>
 	<p>Número de puertas: <% out.print(request.getParameter("num_puertas")); %></p>
-	
+	</div>
 <form method="POST" action="index.jsp"> 
 <input id="linkactualizar" type="submit" value="Volver pagina principal" name="volver">
-			</form>
+			</form></center>
 </body>
 </html>
 

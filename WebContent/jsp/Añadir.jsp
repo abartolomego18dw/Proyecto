@@ -13,6 +13,8 @@
 			background-image: url("../img/diseño/descarga.jpeg") ;
 			background-repeat: no-repeat;
 			background-size: 100vw 100vh;
+			width: 100vw;
+			height: 100vh;
 
 		}
 		.elemento{
