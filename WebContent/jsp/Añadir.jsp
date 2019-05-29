@@ -9,10 +9,11 @@
 <link rel="shortcut icon" type="image/png" href="../../img/diseño/descarga.png">
 <style type="text/css">
 		body{
-			background-color: #5F6A6A;
-			background-image: url("../../img/diseño/descarga.jpeg");
+
+			background-image: url("../img/diseño/descarga.jpeg") ;
 			background-repeat: no-repeat;
 			background-size: 100vw 100vh;
+
 		}
 		.elemento{
 			margin: 2px 0px 1px 10px;

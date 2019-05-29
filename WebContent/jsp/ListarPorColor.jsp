@@ -43,7 +43,7 @@
 					if (i==(i/2)*2){
 					%>
 					<tr>
-					<td><%=i%></td>
+					<td><%=rst.getString(1)%></td>
 					<td><%=rst.getString(2)%></td>
 					<td><%=rst.getString(3)%></td>
 					<td bgColor="<%=rst.getString(4)%>"></td>
@@ -57,7 +57,7 @@
 					}else{
 					%>
 					<tr>
-					<td><%=i%></td>
+					<td><%=rst.getString(1)%></td>
 					<td><%=rst.getString(2)%></td>
 					<td><%=rst.getString(3)%></td>
 					<td bgColor="<%=rst.getString(4)%>"></td>

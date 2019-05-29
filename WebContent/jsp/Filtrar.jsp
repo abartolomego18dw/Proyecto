@@ -16,8 +16,7 @@ if (confirm('¿Estas seguro de que quieres filtrar por este color?')){
 </script>
 <style type="text/css">
 		body{
-			background-color: #5F6A6A;
-			background-image: url("../../img/diseño/descarga.jpeg");
+			background-image: url("../img/diseño/descarga.jpeg") ;
 			background-repeat: no-repeat;
 			background-size: 100vw 100vh;
 		}
