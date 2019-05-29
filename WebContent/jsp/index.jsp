@@ -15,6 +15,7 @@
 <% out.println("<a class='space' href='ModificarCamion.jsp'> Modificar Camión </a>");%> 
 <% out.println("<a class='space' href='Vender.jsp'> Vender Vehículo </a>");%>
 <% out.println("<a class='space' href='Historial.jsp'> Ver Historial </a>");%>
+<% out.println("<a class='space' href='Filtrar.jsp'> Filtrar por Color </a>");%>
     </div>
     <br>
     <table>

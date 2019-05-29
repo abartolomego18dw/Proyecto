@@ -43,3 +43,65 @@
 		System.out.println(e.getMessage());
 	}
 %>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+<title>AXA.COM</title>
+<link rel="shortcut icon" type="image/png" href="../../img/diseño/descarga.png">
+<style type="text/css">
+
+	
+		#form{
+			background-color: #2E4053;
+			width: 500px;
+			text-align: center;
+			height: 520px;
+			margin-top: 50px;
+			border-radius: 5px;
+
+		}
+
+		#linkactualizar{
+			margin-top: 10px;
+			margin-left: : 0px;
+			width: 36%;
+			font-size: 20px;
+			border-style: 0px;
+			background-color: #28B463  ;
+			border-width: 1px;
+			height: 40px;
+			color: white;
+		}
+
+		
+		input{
+		background-color: #2E4053;
+		color: grey;
+		border:grey 1px solid;
+		height: 25px;
+		text-align: center;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<p>Ha comprado el Camión con los siguientes datos: </p>
+	<p>ID Serie: <% out.print(request.getParameter("id_serie")); %> </p>
+	<p>Color: <% out.print(request.getParameter("cod_color")); %></p>
+	<p>Matrícula: <% out.print(request.getParameter("matricula")); %></p>
+	<p>Número de bastidor: <% out.print(request.getParameter("num_bastidor"));%></p>
+	<p>¿Se va a pintar?: <% out.print(request.getParameter("se_pinta")); %></p>
+	<p>Núemro de asientos: <% out.print(request.getParameter("num_asientos")); %></p>
+	<p>Precio: <% out.print(request.getParameter("precio")); %> euros</p>
+	<p>Tipo de Mercancía: <% out.print(request.getParameter("tipo_mercancia")); %></p>
+	<p>Carga: <% out.print(request.getParameter("carga")); %> Kg</p>
+	
+<form method="POST" action="index.jsp"> 
+<input id="linkactualizar" type="submit" value="Volver pagina principal" name="volver">
+			</form>
+</body>
+</html>

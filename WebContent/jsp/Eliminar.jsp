@@ -25,8 +25,8 @@
 		System.out.println(e.getMessage());
 	}
 %>
-<h3>Ha sido eliminado el vehiculo <%String resultado = request.getParameter("id_vehiculo");
-out.println(resultado);
+<h3>Ha sido eliminado el vehiculo <%String id_vehiculo = request.getParameter("id_vehiculo");
+out.println(id_vehiculo);
 %></h3>
 <form method="POST" action="index.jsp">
 	<center><div id="form" >

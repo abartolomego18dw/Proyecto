@@ -87,8 +87,6 @@
 
 	
 
-		<button  id="linkactualizar"><a href="UPDATE.html">ACTUALIZAR</a></button>
-		<button  id="linkborrar"><a href="VENDER.html">VENDER</a></button>
 
 
 
@@ -96,19 +94,19 @@
 
 		<h3>SELECCIONE EL ID DEL VEHICULO QUE QUIERE MODIFICAR:</h3>
 		
-		<input value="id_vehiculo" type="number" name="id_vehiculo" class="elemento" title="id_vehiculo"><br>
+		<input placeholder="ID vehículo" value="" type="number" name="id_vehiculo" class="elemento" title="id_vehiculo" min="1" required><br>
 		
 		<h3>DATOS A MODIFICAR</h3>
 			
-			<input value="id_serie" type="number" name="id_serie" class="elemento" title="id_serie"><br>
-			<input value="Color" type="color" name="cod_color" class="elemento" title="Color">
-			<input value="Matricula" type="text" name="matricula" class="elemento" title="Matricula"><br>
-			<input value="Numero bastidor" type="text" name="num_bastidor" class="elemento" title="Numero bastidor">
-			<input value="Se pinta" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
-			<input value="Numero de asientos" type="number" name="num_asientos" class="elemento" title="Número de asientos">
-			<input value="precio" type="number" name="precio" class="elemento" title="precio"><br>
-			<input value="Capacidad maletero" type="number" name="capacidad_maletero" class="elemento" title="Capacidad del maletero">
-			<input value="Numero de puertas" type="number" name="num_puertas" class="elemento" title="Numero de puertas">
+			<input placeholder="ID serie" value="" type="number" name="id_serie" class="elemento" title="id_serie"><br>
+			<input placeholder="Color" value="" type="color" name="cod_color" class="elemento" title="Color">
+			<input placeholder="Matrícula" value="" type="text" name="matricula" class="elemento" title="Matricula"><br>
+			<input placeholder="Número de Bastidor" value="" type="text" name="num_bastidor" class="elemento" title="Numero bastidor">
+			<input placeholder="¿Se pinta?" value="" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
+			<input placeholder="Número de asientos" value="" type="number" name="num_asientos" class="elemento" title="Número de asientos">
+			<input placeholder="Precio" value="" type="number" name="precio" class="elemento" title="precio"><br>
+			<input placeholder="Capacidad de maletero" value="" type="number" name="capacidad_maletero" class="elemento" title="Capacidad del maletero">
+			<input placeholder="Número de puertas" value="" type="number" name="num_puertas" class="elemento" title="Numero de puertas">
 
 			
 		

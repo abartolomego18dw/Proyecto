@@ -87,9 +87,6 @@
 
 	
 
-		<button  id="linkactualizar"><a href="UPDATE.html">ACTUALIZAR</a></button>
-		<button  id="linkborrar"><a href="VENDER.html">VENDER</a></button>
-
 
 
 
@@ -97,18 +94,18 @@
 
 		<h3>DATOS GENERALES</h3>
 			
-			<input value="id_serie" type="number" name="id_serie" class="elemento" title="id_serie"><br>
-			<input value="Color" type="" name="cod_color" class="elemento" title="Color">
-			<input value="Matricula" type="text" name="matricula" class="elemento" title="Matricula"><br>
-			<input value="Numero bastidor" type="text" name="num_bastidor" class="elemento" title="Numero bastidor">
-			<input value="Se pinta" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
-			<input value="Numero de asientos" type="number" name="num_asientos" class="elemento" title="Número de asientos">
-			<input value="precio" type="number" name="precio" class="elemento" title="precio"><br>
+			<input placeholder="ID serie" value="" type="number" name="id_serie" class="elemento" title="id_serie" required min ="1"><br>
+			<input placeholder="Color" value="" type="color" name="cod_color" class="elemento" title="Color" required>
+			<input placeholder="Matrícula" value="" type="text" name="matricula" class="elemento" title="Matricula" required><br>
+			<input placeholder="Número de Bastidor" value="" type="text" name="num_bastidor" class="elemento" title="Numero bastidor" required>
+			<input placeholder="¿Se pinta?" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" required><br>
+			<input placeholder="Número de asientos" value="" type="number" name="num_asientos" class="elemento" title="Número de asientos" required min="1">
+			<input placeholder="Precio" value="" type="number" name="precio" class="elemento" title="precio" required min ="1"><br>
 			
 		<h3>DATOS ESPECÍFICOS DE CAMIÓN</h3>
 		
-			<input value="Tipo de Mercanicia" type="text" name="tipo_mercancia" class="elemento" title="Tipo_Mercancia">
-			<input value="Carga" type="number" name="carga" class="elemento" title="Carga">
+			<input placeholder="Tipo de Mercancía" value="" type="text" name="tipo_mercancia" class="elemento" title="Tipo_Mercancia" required>
+			<input placeholder="Carga" value="" type="number" name="carga" class="elemento" title="Carga" required>
 			
 
 			

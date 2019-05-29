@@ -87,9 +87,7 @@
 
 	
 
-		<button  id="linkactualizar"><a href="UPDATE.html">ACTUALIZAR</a></button>
-		<button  id="linkborrar"><a href="VENDER.html">VENDER</a></button>
-
+	
 
 
 
@@ -97,18 +95,18 @@
 
 		<h3>DATOS GENERALES</h3>
 			
-			<input value="id_serie" type="number" name="id_serie" class="elemento" title="id_serie"><br>
-			<input value="Color" type="" name="cod_color" class="elemento" title="Color">
-			<input value="Matricula" type="text" name="matricula" class="elemento" title="Matricula"><br>
-			<input value="Numero bastidor" type="text" name="num_bastidor" class="elemento" title="Numero bastidor">
-			<input value="Se pinta" type="text" name="se_pinta" class="elemento" title="Se pinta"><br>
-			<input value="Numero de asientos" type="number" name="num_asientos" class="elemento" title="Número de asientos">
-			<input value="precio" type="number" name="precio" class="elemento" title="precio"><br>
+			<input placeholder="id_serie" value="id_serie" type="number" name="id_serie" class="elemento" title="id_serie" required min ="1"><br>
+			<input palceholder="Color" value="" type="color" name="cod_color" class="elemento" title="Color" required>
+			<input placeholder="Matricula" value="" type="text" name="matricula" class="elemento" title="Matricula" required><br>
+			<input placeholder="Numero bastidor" value="" type="text" name="num_bastidor" class="elemento" title="Numero bastidor" required>
+			<input placeholder="Se pinta" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" required><br>
+			<input placeholder="Numero de asientos" value="" type="number" name="num_asientos" class="elemento" title="Número de asientos" required min="1">
+			<input placeholder="precio" value="" type="number" name="precio" class="elemento" title="precio" min="1"><br>
 			
 		<h3>DATOS ESPECÍFICOS DE COCHE</h3>
 		
-			<input value="Capacidad maletero" type="number" name="capacidad_maletero" class="elemento" title="Capacidad del maletero">
-			<input value="Numero de puertas" type="number" name="num_puertas" class="elemento" title="Numero de puertas">
+			<input placeholder="Capacidad maletero" value="" type="number" name="capacidad_maletero" class="elemento" title="Capacidad del maletero" required min="1">
+			<input placeholder="Numero de puertas" value="" type="number" name="num_puertas" class="elemento" title="Numero de puertas" required min="1">
 
 			
 		
