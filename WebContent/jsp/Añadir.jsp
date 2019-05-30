@@ -102,7 +102,11 @@
 			<input palceholder="Color" value="" type="color" name="cod_color" class="elemento" title="Color" required>
 			<input placeholder="Matricula" value="" type="text" name="matricula" class="elemento" title="Matricula" required><br>
 			<input placeholder="Numero bastidor" value="" type="text" name="num_bastidor" class="elemento" title="Numero bastidor" required>
-			<input placeholder="Se pinta" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" required><br>
+			<input list="pintado" placeholder="Se pinta" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" autocomplete="off" required>
+			<datalist id="pintado">
+    			<option value="Si"></option>
+    			<option value="No"></option>
+			</datalist><br>
 			<input placeholder="Numero de asientos" value="" type="number" name="num_asientos" class="elemento" title="Número de asientos" required min="1">
 			<input placeholder="precio" value="" type="number" name="precio" class="elemento" title="precio" min="1"><br>
 			

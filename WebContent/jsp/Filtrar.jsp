@@ -90,7 +90,15 @@ if (confirm('¿Estas seguro de que quieres filtrar por este color?')){
 
 <h3>Selecciona un color</h3>
 			
-			<input value="" placeholder="Color" type="text" name="color" class="elemento" title="color" required><br>
+			<input list="color" value="" placeholder="Color" type="text" name="color" class="elemento" title="color" required autocomplete="off">
+			<datalist id="color">
+    			<option value="Grey"></option>
+    			<option value="brown"></option>
+    			<option value="blue"></option>
+    			<option value="#1D2134"></option>
+    			<option value="#232821"></option>
+			</datalist>
+			<br>
 <br>
 			
 			

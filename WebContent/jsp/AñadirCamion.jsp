@@ -97,13 +97,23 @@
 			<input placeholder="Color" value="" type="color" name="cod_color" class="elemento" title="Color" required>
 			<input placeholder="Matrícula" value="" type="text" name="matricula" class="elemento" title="Matricula" required><br>
 			<input placeholder="Número de Bastidor" value="" type="text" name="num_bastidor" class="elemento" title="Numero bastidor" required>
-			<input placeholder="¿Se pinta?" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" required><br>
+			<input list="pintado" placeholder="¿Se pinta?" value="" type="text" name="se_pinta" class="elemento" title="Se pinta" required autocomplete="off">
+			<datalist id="pintado">
+				<option value="Si"></option>
+    			<option value="No"></option>
+			</datalist>
+			<br>
 			<input placeholder="Número de asientos" value="" type="number" name="num_asientos" class="elemento" title="Número de asientos" required min="1">
 			<input placeholder="Precio" value="" type="number" name="precio" class="elemento" title="precio" required min ="1"><br>
 			
 		<h3>DATOS ESPECÍFICOS DE CAMIÓN</h3>
 		
-			<input placeholder="Tipo de Mercancía" value="" type="text" name="tipo_mercancia" class="elemento" title="Tipo_Mercancia" required>
+			<input list="Mercancia" placeholder="Tipo de Mercancía" value="" type="text" name="tipo_mercancia" class="elemento" title="Tipo_Mercancia" required autocomplete="off">
+			<datalist id="Mercancia">
+				<option value="General"></option>
+    			<option value="Peligrosa"></option>
+    			<option value="Árida"></option>
+			</datalist>
 			<input placeholder="Carga" value="" type="number" name="carga" class="elemento" title="Carga" required>
 			
 
