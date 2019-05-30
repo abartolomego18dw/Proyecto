@@ -34,7 +34,7 @@ ResultSet rst=null;
 Statement stmt=null;
 try{
   
-String url="jdbc:mysql://10.18.124.44:3306/proyecto?user=andoni&password=Superusuario";
+String url="jdbc:mysql://10.18.124.63:3306/proyecto?user=andoni&password=Superusuario";
 int i=1;
 con=DriverManager.getConnection(url);
 stmt=con.createStatement();
